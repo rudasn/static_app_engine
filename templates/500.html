@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+
+{% block title %}Something bad happened (500){% endblock %}
+
+{% block primary %}
+
+<!-- broken  -->
+<div class="section broken">
+	<div class="broken-inner inner">
+	<!-- broken content  -->
+		<h3 class="heading">500 Error</h3>
+		<h1>The page "<strong>{{ url }}</strong>" is not available at the moment.</h1>
+		<p>Please <a href="mailto:{{ contact.owner }}?subject=Website 500 Error&amp;body=I tried visiting '{{ url }}' but there was a server error">let me know</a> if the problem persists.</p>
+	</div> <!-- /broken-inner  -->
+</div> <!-- /broken  -->
+
+{% endblock %}

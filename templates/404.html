@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+
+{% block title %}Page not found (404){% endblock %}
+
+{% block primary %}
+<!-- not_found  -->
+<div class="section not_found">
+	<div class="not_found-inner inner">
+	<!-- not_found content  -->
+		<h3 class="heading">404 Error</h3>
+		<h1>Page not Found</h1>
+		<p>The page "<strong>{{ url }}</strong>" was not found.</p>
+		<p>If you clicked on a broken link please <a href="mailto:{{ contact.owner }}?subject=Website 404 Error&amp;body=You linked to the page '{{ url }}' but it does not exist.">let me know</a>.</p>
+	</div> <!-- /not_found-inner  -->
+</div> <!-- /not_found  -->
+{% endblock %}
