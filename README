@@ -1,0 +1,9 @@
+Quickly create static websites using Google App Engine with Python and Django templates.
+
+1. Create your application in GAE
+2. Set your application name in app.yaml
+3. Change some settings in main.py (eg. admin e-mail address)
+4. Edit "templates/base.html" to suit your needs. This will be the base template that all others extend (if you want)
+5. Create a new template for each page you want. For example, templates/news.html is matched with /news/; templates/news/0001.html is matched with /news/0001/ and so on.
+6. Static media (CSS, JavaScript, images, etc) goes to /static/
+7. Publish to GAE
